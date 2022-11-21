@@ -15,51 +15,36 @@
         tools:layout_editor_absoluteY="104dp">
 
         <ImageView
-            android:id="@+id/logo"
-            android:layout_width="500dp"
+            android:id="@+id/title"
+            android:layout_width="350dp"
             android:layout_height="500dp"
-            android:layout_marginTop="-130dp"
+            android:layout_marginTop="-150dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/withslogan" />
+            app:srcCompat="@drawable/howitworks" />
+
+        <TextView
+            android:layout_width="355dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-170dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Description of how it works, explaining that we will be showing the comparison of gross salaries accross differetn offers after accounting for state and other local taxes, as well as cost of living."
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
 
         <Button
-            android:id="@+id/compareoffers"
+            android:id="@+id/back"
             android:layout_width="300dp"
             android:layout_height="73dp"
             android:layout_gravity="center"
             android:background="#94ccbc"
-            android:text="compare offers"
+            android:text="back"
             android:fontFamily="sans-serif-condensed-medium"
             android:textColor="#737373"
             android:textSize="26dp"
-            android:layout_marginTop="-100dp"
-            android:layout_marginBottom="20dp" />
-
-        <Button
-            android:id="@+id/myoffers"
-            android:layout_width="300dp"
-            android:layout_height="73dp"
-            android:layout_gravity="center"
-            android:background="#94ccbc"
-            android:text="my offers"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textColor="#737373"
-            android:textSize="26dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="20dp" />
-
-        <Button
-            android:id="@+id/howitworks"
-            android:layout_width="300dp"
-            android:layout_height="73dp"
-            android:layout_gravity="center"
-            android:background="#94ccbc"
-            android:text="how it works"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textColor="#737373"
-            android:textSize="26dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"/>
 
 

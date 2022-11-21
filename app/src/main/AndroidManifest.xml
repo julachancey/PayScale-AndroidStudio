@@ -25,6 +25,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name=".CompareOffers"> </activity>
+        <activity android:name=".HowItWorks"> </activity>
+        <activity android:name=".MyOffers"> </activity>
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#dcf4e4"
-    tools:context=".MainActivity">
+    tools:context=".MyOffers">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,51 +15,38 @@
         tools:layout_editor_absoluteY="104dp">
 
         <ImageView
-            android:id="@+id/logo"
-            android:layout_width="500dp"
+            android:id="@+id/title"
+            android:layout_width="350dp"
             android:layout_height="500dp"
-            android:layout_marginTop="-130dp"
+            android:layout_marginTop="-150dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/withslogan" />
+            app:srcCompat="@drawable/myoffers" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-170dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Here, the user will be able to view all of the offers they have saved, showing the location, original salary, and the salary after taxes."
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
 
         <Button
-            android:id="@+id/compareoffers"
+            android:id="@+id/back"
             android:layout_width="300dp"
             android:layout_height="73dp"
             android:layout_gravity="center"
             android:background="#94ccbc"
-            android:text="compare offers"
+            android:text="back"
             android:fontFamily="sans-serif-condensed-medium"
             android:textColor="#737373"
             android:textSize="26dp"
-            android:layout_marginTop="-100dp"
-            android:layout_marginBottom="20dp" />
-
-        <Button
-            android:id="@+id/myoffers"
-            android:layout_width="300dp"
-            android:layout_height="73dp"
-            android:layout_gravity="center"
-            android:background="#94ccbc"
-            android:text="my offers"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textColor="#737373"
-            android:textSize="26dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="20dp" />
-
-        <Button
-            android:id="@+id/howitworks"
-            android:layout_width="300dp"
-            android:layout_height="73dp"
-            android:layout_gravity="center"
-            android:background="#94ccbc"
-            android:text="how it works"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textColor="#737373"
-            android:textSize="26dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"/>
 
 
