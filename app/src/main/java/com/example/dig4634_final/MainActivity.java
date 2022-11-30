@@ -4,12 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button compareoffers;
+    Button compareOffers;
     Button myoffers;
     Button howitworks;
 
@@ -18,12 +19,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        assignId(compareoffers,R.id.compareoffers);
+        assignId(compareOffers, R.id.compareOffersButton);
         assignId(myoffers,R.id.myoffers);
         assignId(howitworks,R.id.howitworks);
     }
 
-    void assignId(Button btn,int id){
+    void assignId(Button btn, int id){
         btn = findViewById(id);
         btn.setOnClickListener(this);
     }
@@ -33,8 +34,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button = (Button) view;
         String buttonText = button.getText().toString();
         if (buttonText.equals("compare offers")) {
-            Intent myIntent = new Intent(getBaseContext(), CompareOffers.class);
-            startActivity(myIntent);
+            Log.d("compare", "onClick: Clicked compare offers button");
+            Intent compareIntent = new Intent(getBaseContext(), CompareOffersActivity.class);
+            startActivity(compareIntent);
+            //Intent myIntent = new Intent(getBaseContext(), CompareOffersActivity.class);
+            //startActivity(myIntent);
             return;
         }
         if (buttonText.equals("my offers")) {
